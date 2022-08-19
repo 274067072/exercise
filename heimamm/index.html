@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>heimamm</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">黑马前端</header>
+    <section class="wrap">
+      <div class="nav">
+        <a href="#">
+          <img src="icons/icon1.png" alt="" />
+          <span>HR面试</span>
+        </a>
+        <a href="#">
+          <img src="icons/icon2.png" alt="" />
+          <span>笔试</span>
+        </a>
+        <a href="#">
+          <img src="icons/icon3.png" alt="" />
+          <span>技术面试</span>
+        </a>
+        <a href="#">
+          <img src="icons/icon4.png" alt="" />
+          <span>模拟面试</span>
+        </a>
+        <a href="#">
+          <img src="icons/icon5.png" alt="" />
+          <span>面试技巧</span>
+        </a>
+        <a href="#">
+          <img src="icons/icon6.png" alt="" />
+          <span>薪资查询</span>
+        </a>
+      </div>
+      <div class="go">
+        <a href="#"><img src="images/go.png" alt="" /></a>
+      </div>
+    </section>
+    <div class="content">
+      <div class="content_hd">
+        <div class="left">就业指导</div>
+        <div class="right">更多&gt;&gt;</div>
+      </div>
+      <div class="content_bd">
+        <div class="guid swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"> <img src="images/pic.png" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"> <img src="images/2.jpg" alt="" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"> <img src="images/3.jpg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <p>老师教你应对面试</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_hd">
+        <div class="left">充电学习</div>
+        <div class="right">更多&gt;&gt;</div>
+      </div>
+      <div class="content_bd">
+        <div class="learn swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/pic1.png" alt="" />
+                <h4>说地道英语，告别中式英语</h4>
+                <p><span>156</span>人学习</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/pic2.png" alt="" />
+                <h4>思维攻略金字塔思维提升写作能力</h4>
+                <p><span>156</span>人学习</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="images/pic1.png" alt="" />
+                <h4>说地道英语，告别中式英语</h4>
+                <p><span>156</span>人学习</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="#">
+        <img src="icons/home.png" alt="" />
+        <p class="active">首页</p>
+      </a>
+      <a href="#">
+        <img src="icons/net.png" alt="" />
+        <p>技术面试</p>
+      </a>
+      <a href="#">
+        <img src="icons/ms.png" alt="" />
+        <p>模拟面试</p>
+      </a>
+      <a href="#">
+        <img src="icons/user.png" alt="" />
+        <p>我的主页</p>
+      </a>
+    </footer>
+  </body>
+  <script src="js/flexible.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    (function () {
+      var swiper = new Swiper(".guid", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    })();
+    (function () {
+      var swiper = new Swiper(".learn", {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      });
+    })();
+  </script>
+</html>
