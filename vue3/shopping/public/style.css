@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 12px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #c81623;
+}
+ul,
+ol,
+dl,
+dt,
+dd,
+p,
+h4,
+h3 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.red {
+  color: #c81623;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+table {
+  width: 100%;
+}
+td{
+  border: 1px solid #c9c9c9;
+}
