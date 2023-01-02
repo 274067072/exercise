@@ -1,0 +1,15 @@
+<!--pages/list/list.wxml-->
+<view class="sort-list">
+  <view bindtap="handlePrice">价格排序</view>
+  <view bindtap="handleComment">好评排序</view>
+</view>
+<view class="list-container">
+  <view wx:for="{{list}}" wx:key="index" class="goods" bindtap="toDetail" data-id="{{item.id}}" data-title="{{item.title}}">
+    <image src="http://localhost:5000{{item.poster}}" mode="widthFix"></image>
+    <view class="info">
+      <view>{{item.title}}</view>
+      <view>价格：<text style="color: rgb(220, 0, 0); font-weight: 700;">￥{{item.price}}</text></view>
+      <view>好评率：{{item.goodcomment}}</view>
+    </view>
+  </view>
+</view>

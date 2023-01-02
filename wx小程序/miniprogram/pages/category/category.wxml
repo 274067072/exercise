@@ -1,0 +1,13 @@
+<!--pages/category/category.wxml-->
+<view class="category-container">
+  <view class="category">
+    <view wx:for="{{categories}}" wx:key="index" class="{{current==index?'active':''}}" bindtap="handleCurrent" data-index="{{index}}">{{item.title}}</view>
+  </view>
+  <view class="category-goods">
+
+    <view wx:for="{{categories[current].goods}}" wx:key="index" class="goods" bindtap="toDetail" data-id="{{item.id}}" data-title="{{item.title}}">
+      <image src="http://localhost:5000{{item.poster}}" mode="widthFix"></image>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/center/center",
+    "pages/shopcar/shopcar",
+    "pages/category/category",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#25B195",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#25B195",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "icon/shouye_-copy.png",
+        "selectedIconPath": "icon/shouye_.png"
+      }, {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "icon/qiapianliebiao-copy.png",
+        "selectedIconPath": "icon/qiapianliebiao.png"
+      }, {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "icon/gouwuche-copy.png",
+        "selectedIconPath": "icon/gouwuche.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "icon/wode-copy.png",
+        "selectedIconPath": "icon/wode.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

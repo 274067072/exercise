@@ -1,0 +1,21 @@
+<!--pages/center/center.wxml-->
+<view wx:if="{{userInfo}}">
+  <view style="height: 350rpx;background-color: #25B195;text-align: center;">
+  <image src="{{userInfo.avatarUrl}}" mode="widthFix" bindtap="changeImage"/>
+  <view style="color: #fff;">{{userInfo.nickName}}</view>
+</view>
+<view class="config-list">
+  <view class="config-item">
+    <text>完善信息</text>
+    <text decode="{{true}}" style="font-size: large;">&gt;</text>
+  </view>
+  <view class="config-item">
+    <text>个性设置</text>
+    <text decode="{{true}}" style="font-size: large;">&gt;</text>
+  </view>
+</view>
+</view>
+<view wx:else>
+  <view style="color: grey;height: 1000rpx; text-align: center;line-height: 1000rpx;">未授权用户信息</view>
+  <button style="background-color: #25B195;color: #fff;position: absolute;top:550rpx;left: 200rpx;" bindtap="auth">点击授权</button>
+</view>

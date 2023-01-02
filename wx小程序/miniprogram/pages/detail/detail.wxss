@@ -1,0 +1,125 @@
+/* pages/detail/detail.wxss */
+.detail-swiper {
+  height: 400rpx;
+}
+
+.detail-swiper image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.sub-nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 100rpx;
+  background-color: #fff;
+  line-height: 100rpx;
+}
+
+.sub-nav view {
+  flex: 1;
+  margin: 0 30rpx;
+  text-align: center;
+}
+
+@keyframes toRight {
+  0% {
+    width: 0;
+    left: 345rpx;
+  }
+
+  100% {
+    width: 345rpx;
+    left: 345rpx;
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    width: 0;
+    left: 345rpx;
+  }
+
+  100% {
+    width: 345rpx;
+    left: 0;
+  }
+}
+
+.sub-nav .border-left,
+.sub-nav .border-right {
+  position: absolute;
+  bottom: 10rpx;
+  width: 345rpx;
+  height: 100rpx;
+  border-bottom: 4rpx solid #25B195;
+}
+
+.sub-nav .border-left {
+  left: 0;
+  animation: toLeft .2s ease-in-out;
+}
+
+.sub-nav .border-right {
+  left: 345rpx;
+  animation: toRight .2s ease-in-out;
+}
+
+.desc view {
+  margin: 10rpx;
+  line-height: 50rpx;
+}
+
+.desc image {
+  width: 100%;
+}
+
+.comments .user {
+  display: flex;
+  margin: 0 30rpx;
+  padding-top: 30rpx;
+}
+
+.comments .user image {
+  width: 100rpx;
+  border-radius: 50%;
+}
+
+.comments .user view {
+  line-height: 100rpx;
+  padding-left: 20rpx;
+}
+
+.comments .user view:last-of-type {
+  flex: 1;
+  text-align: right;
+}
+
+.comments .comment {
+  padding: 30rpx;
+  border-bottom: 4rpx solid #25B195
+}
+
+.comments .comment image {
+  width: 300rpx;
+  margin-top: 20rpx;
+}
+.bottom{
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 20rpx 20rpx 0 0 ;
+  overflow: hidden;
+}
+.bottom view{
+  flex: 1;
+  background-color: rgb(129, 178, 211);
+  color: #fff;
+}
+.bottom view:last-of-type{
+  background-color: rgb(236, 174, 135);
+}

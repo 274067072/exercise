@@ -1,0 +1,21 @@
+/* pages/search/search.wxss */
+.input-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 10rpx 30rpx;
+}
+
+input {
+  height: 60rpx;
+  padding: 0 30rpx;
+  border: 1rpx solid #25B195;
+  border-radius: 30rpx;
+}
+.search-list{
+  height: 80rpx;
+  padding: 0 30rpx;
+  margin: 0 30rpx;
+  line-height: 80rpx;
+  border-bottom: 1px dashed #25B195;
+}

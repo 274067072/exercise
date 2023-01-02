@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<swiper autoplay="{{true}}" circular="{{true}} " indicator-dots="{{true}}" class="home-swiper">
+  <swiper-item wx:for="{{swiperList}}" wx:key="index">
+    <image src="http://localhost:5000{{item.url}}" mode="widthFix"></image>
+  </swiper-item>
+</swiper>
+<view bindtap="toSearch" class="search">搜索商品</view>
+<view wx:for="{{searchList}}" wx:key="index" class="goods" bindtap="toDetail" data-id="{{item.id}}" data-title="{{item.title}}">
+  <image src="http://localhost:5000{{item.poster}}" mode="widthFix"></image>
+  <view class="info">
+    <view>{{item.title}}</view>
+    <view>价格：<text style="color: rgb(220, 0, 0); font-weight: 700;">￥{{item.price}}</text></view>
+    <view>好评率：{{item.goodcomment}}</view>
+  </view>
+</view>

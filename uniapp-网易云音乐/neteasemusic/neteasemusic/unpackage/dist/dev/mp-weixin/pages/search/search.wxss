@@ -1,0 +1,108 @@
+.search.data-v-4cedc0c6 {
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+  width: 90%;
+  padding: 0 30rpx;
+  margin: 30rpx auto;
+  border-radius: 35rpx;
+  background-color: #f7f7f7;
+}
+.search .iconfont.data-v-4cedc0c6 {
+  color: #aeadaf;
+}
+.search .iconfont.data-v-4cedc0c6::before {
+  vertical-align: top;
+}
+.search input.data-v-4cedc0c6 {
+  flex: 1;
+  margin-left: 26rpx;
+  font-size: 28rpx;
+}
+.history.data-v-4cedc0c6 {
+  padding: 0 30rpx;
+  margin-bottom: 50rpx;
+}
+.history .title.data-v-4cedc0c6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 0;
+  font-size: 20rpx;
+  color: #aeadaf;
+}
+.history .name-list.data-v-4cedc0c6 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.history .name-list .name.data-v-4cedc0c6 {
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #f7f7f7;
+  border-radius: 30rpx;
+  padding: 0 30rpx;
+  margin: 5rpx;
+  font-size: 25rpx;
+}
+.suggest-list.data-v-4cedc0c6 {
+  margin: 0 30rpx;
+  padding: 0 30rpx;
+}
+.suggest-list .title.data-v-4cedc0c6 {
+  margin: 40rpx 0;
+  color: #3e88c5;
+}
+.suggest-list .song.data-v-4cedc0c6 {
+  color: #666;
+  line-height: 80rpx;
+}
+.suggest-list .song .iconfont.data-v-4cedc0c6 {
+  margin-right: 20rpx;
+  color: #aeadaf;
+}
+.search-list.data-v-4cedc0c6 {
+  padding: 0 30rpx;
+}
+.search-list .song.data-v-4cedc0c6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #aeadaf;
+}
+.search-list .song .info .name.data-v-4cedc0c6 {
+  color: #3e88c5;
+}
+.search-list .song .info .singer.data-v-4cedc0c6 {
+  color: #aeadaf;
+  font-size: 20rpx;
+}
+.search-list .song .iconfont.data-v-4cedc0c6 {
+  color: #aeadaf;
+}
+.search-list .song .iconfont.data-v-4cedc0c6::before {
+  font-size: 60rpx;
+}
+.hot-list.data-v-4cedc0c6 {
+  padding: 0 30rpx;
+}
+.hot-list .song.data-v-4cedc0c6 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40rpx;
+}
+.hot-list .song .index.data-v-4cedc0c6 {
+  width: 60rpx;
+  color: #d22832;
+}
+.hot-list .song .content.data-v-4cedc0c6 {
+  font-size: 20rpx;
+  color: #aeadaf;
+}
+.hot-list .song .cont.data-v-4cedc0c6 {
+  flex: 1;
+  text-align: right;
+  color: #aeadaf;
+  font-size: 20rpx;
+}
+

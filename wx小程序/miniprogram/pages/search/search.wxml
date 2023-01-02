@@ -1,0 +1,6 @@
+<!--pages/search/search.wxml-->
+<view class="input-container"><input placeholder="请输入商品名" bindinput="handleSearch" /></view>
+<block wx:if="{{searchList.length>0}}">
+  <view wx:for="{{searchList}}" wx:key="index" class="search-list" bindtap="toDetail" data-id="{{item.id}}" data-title="{{item.title}}" data-class="{{item.class}}">{{item.title}}</view>
+</block>
+<view wx:else style="color: gray;height: 800rpx;text-align: center;line-height: 800rpx;">没有找到匹配的商品</view>

@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<swiper circular="{{true}} " class="detail-swiper">
+  <swiper-item wx:for="{{detail.slides}}" wx:key="index">
+    <image src="http://localhost:5000{{item}}" mode="aspectFit" bindtap="handleTap" data-current="{{item}}" />
+  </swiper-item>
+</swiper>
+<view class="sub-nav">
+  <view bindtap="handleSubNavTap" data-current="{{0}}">商品详情</view>
+  <view bindtap="handleSubNavTap" data-current="{{1}}">用户评价</view>
+  <view class="{{current===0?'border-left':'border-right'}}" />
+</view>
+<view class="desc" wx:if="{{current===0}}">
+  <view style="color: #666;">{{detail.feature}}</view>
+  <image wx:for="{{detail.desc}}" wx:key="index" src="{{item}}" mode="widthFix" />
+</view>
+<view wx:if="{{current===1}}" class="comments">
+  <view wx:for="{{comments}}" wx:key="index">
+    <view class="user">
+      <image src="http://localhost:5000{{item.userImageUrl}}" mode="widthFix"/>
+      <view>{{item.nickname}}</view>
+      <view>{{item.creationTime}}</view>
+    </view>
+    <view class="comment">
+      <view>{{item.content}}</view>
+      <image src="http://localhost:5000{{item.imgUrl}}" mode="widthFix"/>
+    </view>
+  </view>
+</view>
+<view class="bottom">
+  <view bindtap="toShopCar">跳转购物车</view>
+  <view bindtap="addShopCar">加入购物车</view>
+</view>

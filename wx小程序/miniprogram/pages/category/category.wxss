@@ -1,0 +1,41 @@
+/* pages/category/category.wxss */
+.category-container {
+  display: flex;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 260rpx;
+  background-color: #efefef;
+  height: 100vh;
+}
+
+.category view {
+  flex: 1;
+  line-height: 158rpx;
+  text-align: center;
+}
+
+.category .active {
+  border-left: 10rpx solid #25B195;
+  background-color: #fff;
+  color: #25B195;
+}
+
+.category-goods {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-goods .goods {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 30rpx;
+  text-align: center;
+}
+
+.category-goods image {
+  width: 100%;
+}

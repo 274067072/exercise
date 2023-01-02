@@ -1,0 +1,44 @@
+/* pages/home/home.wxss */
+.home-swiper {
+  height: 299rpx;
+  margin-bottom: 10rpx;
+}
+
+.home-swiper image {
+  width: 100%;
+}
+
+.goods {
+  display: flex;
+  padding: 30rpx;
+  margin: 0 30rpx;
+  border-bottom: 1rpx solid #25B195;
+}
+
+.goods:last-of-type {
+  border: none;
+}
+
+.goods image {
+  width: 200rpx;
+}
+
+.goods .info {
+  padding-left: 20rpx;
+}
+
+.goods .info view {
+  line-height: 60rpx;
+}
+
+.search {
+  position: sticky;
+  top: 0;
+  height: 60rpx;
+  background-color: #fff;
+  border: 4rpx solid #25B195;
+  border-radius: 30rpx;
+  margin: 0 10rpx;
+  line-height: 60rpx;
+  text-align: center;
+}

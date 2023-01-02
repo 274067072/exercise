@@ -1,0 +1,37 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view wx:if="{{userInfo&&carList.length}}">
+  <view wx:for="{{carList}}" wx:key="index" class="shopcar" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" data-id="{{item.id}}" animation="{{item.id==moveId?animation:animationEnd}}">
+    <checkbox class="checkbox" checked="{{item.checked}}" bindtap="handleChecked" data-id="{{item.id}}" />
+    <image src="http://localhost:5000{{item.good.poster}}" mode="widthFix"></image>
+    <view class="info">
+      <view class="title">{{item.good.title}}</view>
+      <view class="price">￥{{item.good.price}}</view>
+    </view>
+    <view class="num">
+      <view bindtap="handleNum" data-num="{{1}}" data-id="{{item.id}}">
+        +
+      </view>
+      <view>
+        {{item.number}}
+      </view>
+      <view bindtap="handleNum" data-num="{{-1}}" data-id="{{item.id}}">
+        -
+      </view>
+    </view>
+    <view class="delete">删除</view>
+  </view>
+  <view class="total">
+    <checkbox class="checkbox" bindtap="checkAll" checked="{{isCheckAll}}"/>
+    <view>全选</view>
+    <view class="sum">合计：</view>
+    <view class="totalPrice">￥{{totalPrice}}</view>
+    <view class="button">去结算</view>
+  </view>
+</view>
+<view wx:if="{{!userInfo}}">
+  <view style="color: grey;height: 1000rpx; text-align: center;line-height: 1000rpx;">未授权用户信息</view>
+  <button style="background-color: #25B195;color: #fff;position: absolute;top:550rpx;left: 200rpx;" bindtap="auth">点击授权</button>
+</view>
+<view wx:if="{{userInfo&&!carList.length}}" class="empty" style="color: grey;height: 1000rpx; text-align: center;line-height: 1000rpx;">
+  购物车是空的，快去添加商品吧~
+</view>
